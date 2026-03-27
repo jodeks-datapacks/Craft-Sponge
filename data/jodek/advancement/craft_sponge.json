@@ -1,0 +1,72 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:sponge"
+    },
+    "title": "Craft Sponge              ",
+    "description": [
+      {
+        "translate": "craft_sponge.description",
+        "fallback": "Sponge are craftable!",
+        "color": "white"
+      },
+      {
+        "text": "\n\n"
+      },
+      {
+        "translate": "jodek.datapack_version",
+        "fallback": "Datapack version: ",
+        "color": "dark_green"
+      },
+      {
+        "text": "v1.0.1",
+        "color": "green"
+      },
+      {
+        "text": "\n"
+      },
+      {
+        "translate": "jodek.game_version",
+        "fallback": "Game version: ",
+        "color": "dark_green"
+      },
+      {
+        "text": "1.21.6+",
+        "color": "green"
+      },
+      {
+        "text": "\n\n"
+      },
+      {
+        "text": "modrinth.com/datapack/craft-sponge",
+        "color": "dark_purple"
+      }
+    ],
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "jodek:crafting",
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "&craft_sponge_advancements"
+              },
+              "score": "jodek.config"
+            },
+            "range": 1
+          }
+        ]
+      }
+    }
+  }
+}
