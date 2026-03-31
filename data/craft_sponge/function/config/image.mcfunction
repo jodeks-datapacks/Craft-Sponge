@@ -17,7 +17,6 @@ function craft_sponge:image/set_image_data {\
     {translate: "craft_sponge.description", fallback: "Adds a crafting recipe for sponge"},\
     "",\
     [{translate: "jodek.datapack_version", fallback: "Datapack version: ", color: "#00a800"}, {text: "v1.0.1", color: "#54fc54"}],\
-    [{translate: "jodek.game_version", fallback: "Game version: ", color: "#00a800"}, {text: "1.21.6+", color: "#54fc54"}],\
     "",\
     [{translate: "jodek.by", fallback: "By ", color: "#fcfcfc"}, {text: "Jodek", color: "#fcfc54"}],\
     {text: "modrinth.com/datapack/craft-sponge", color: "#a800a8"},\
