@@ -1,6 +1,5 @@
 {
   "values": [
-    "craft_sponge:app/setup",
-    "craft_sponge:app/load_message"
+    "craft_sponge:app/setup"
   ]
 }
